@@ -1,0 +1,26 @@
+{
+    "manifest_version":2,
+    "name": "Video Speed Changer",
+    "short_name": "Video Speed",
+    "description": "Change Speed of videos",
+    "version":"0.0.1",
+    "content_scripts":[
+        {
+            "matches":["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "background":{
+        "scripts":["background/background.html"],
+        "persistent": false
+    },
+    "options_ui":{
+        "open_int_tab":true,
+        "page" : "options/index.html"
+    },
+    "browser_action":{
+        "default_title":"Video Speed Changer",
+        "default_popup":"popup/index.html"
+    },
+    "permissions":["tabs","storage"]
+}
