@@ -1,1 +1,28 @@
-<h1>Dash</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Speed Changer</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <header>
+        <h1>Video Speed Changer</h1>
+    </header>
+    <form action="">
+        <div> 
+            Velocidade <label id="speed">1</label>
+        </div>
+        <input type="range" min="1" max="50" id="speedRange">
+        <div id="activeBox"> Ativar <input type="checkbox" id="active">
+        <button type="submit" id="save">
+            Salvar
+        </button>
+        </div>
+    </form>
+    <script src="/chromeUtils.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>

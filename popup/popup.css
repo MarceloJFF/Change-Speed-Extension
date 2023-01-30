@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #eee;
+    width: 260px;
+}
+
+header{
+    border-bottom: 1px solid #ccc;
+    padding: 10px 5px;
+    text-align: center;
+    background: #000000;
+    color: #fff;
+}
+
+form{
+    font-weight: bold;
+    padding: 10px 5px;
+    display: grid;
+    align-items: center;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+div#activeBox{
+   display: flex;
+   align-items: center; 
+}
+
+input#active{
+    margin-left: 10px;
+    transform: scale((1.2));
+}
+
+button#save{
+    padding: 6px;
+    text-transform: uppercase;
+    font-weight:bold;
+    cursor: pointer;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: 0.5s background-color;
+}
+
+button#save:hover{
+    background-color: #eee;
+}
+
+
